@@ -228,6 +228,10 @@ Once you are satisfied with the new version:
     > RESET CLUSTER SETTING cluster.preserve_downgrade_option;
     ~~~
 
+    {{site.data.alerts.callout_info}}
+    This command kicks off internal maintenance and migration work that can take longer depending on the amount of data in the cluster. During this time, the cluster will experience a small amount of additional load.
+    {{site.data.alerts.end}}    
+
 ## Troubleshooting
 
 After the upgrade has finalized (whether manually or automatically), it is no longer possible to downgrade to the previous release. If you are experiencing problems, we therefore recommend that you:
